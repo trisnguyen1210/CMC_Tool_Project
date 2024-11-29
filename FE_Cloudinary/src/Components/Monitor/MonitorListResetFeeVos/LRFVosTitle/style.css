@@ -1,0 +1,8 @@
+#LRFVos_title {
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    font-size: 2rem;
+}

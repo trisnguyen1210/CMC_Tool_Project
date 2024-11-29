@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Rock+Salt&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Freeman, Poetsen_One, "Raleway", sans-serif !important;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+@font-face {
+    font-family: Poetsen_One;
+    src: url(../src/assets/PoetsenOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: Freeman;
+    src: url(../src/assets/Freeman-Regular.ttf);
+}

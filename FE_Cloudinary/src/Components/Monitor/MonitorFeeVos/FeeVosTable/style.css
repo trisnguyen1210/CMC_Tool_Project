@@ -1,0 +1,16 @@
+.options_table {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-bottom: 25px;
+}
+
+.choose_options_table {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.row-red {
+    background-color: #FC819E;
+}

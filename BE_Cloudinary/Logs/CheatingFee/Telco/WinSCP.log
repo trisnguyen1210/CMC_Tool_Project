@@ -1,0 +1,282 @@
+. 2024-03-26 00:10:28.072 --------------------------------------------------------------------------
+. 2024-03-26 00:10:28.072 WinSCP Version 6.3.2 (Build 14890 2024-03-12) (OS 10.0.20348 – Windows Server 2022 Standard)
+. 2024-03-26 00:10:28.072 Configuration: nul
+. 2024-03-26 00:10:28.073 Log level: Normal
+. 2024-03-26 00:10:28.073 Local account: REMOTE-AA4\Administrator
+. 2024-03-26 00:10:28.073 Working directory: C:\Users\Administrator\Desktop\programsTriNVM\Scripts\FeeVos
+. 2024-03-26 00:10:28.073 Process ID: 1132
+. 2024-03-26 00:10:28.081 Ancestor processes: WinSCP, cmd, explorer, ...
+. 2024-03-26 00:10:28.081 Command-line: "C:\Users\Administrator\Desktop\programsTriNVM\WinSCP\WinSCP.exe" /console=6.3.2 /consoleinstance=_5136_484 "/log=C:\Users\Administrator\Desktop\programsTriNVM\Tool_Project\CMC_Project_Tool\BE_Cloudinary\Logs\CheatingFee\Telco\WinSCP.log" "/ini=nul" "/command" "open ftp://cmc:***@103.155.78.105/" "cd /PublicData" "lcd C:\Users\Administrator" "get mobifone_spam_call_phone_20240325.csv" "get viettel_spam_call_phone_20240325.csv" "get vinaphone_spam_call_phone_20240325.csv" "exit"
+. 2024-03-26 00:10:28.082 Time zone: Current: GMT+7 (SE Asia Standard Time), No DST
+. 2024-03-26 00:10:28.082 Login time: Tuesday, March 26, 2024 12:10:28 AM
+. 2024-03-26 00:10:28.082 --------------------------------------------------------------------------
+. 2024-03-26 00:10:28.082 Script: Retrospectively logging previous script records:
+> 2024-03-26 00:10:28.082 Script: open ftp://cmc:***@103.155.78.105/
+. 2024-03-26 00:10:28.082 --------------------------------------------------------------------------
+. 2024-03-26 00:10:28.082 Session name: cmc@103.155.78.105 (Ad-Hoc site)
+. 2024-03-26 00:10:28.082 Host name: 103.155.78.105 (Port: 21)
+. 2024-03-26 00:10:28.082 User name: cmc (Password: Yes, Key file: No, Passphrase: No)
+. 2024-03-26 00:10:28.082 Transfer Protocol: FTP
+. 2024-03-26 00:10:28.082 Ping type: Dummy, Ping interval: 30 sec; Timeout: 15 sec
+. 2024-03-26 00:10:28.082 Disable Nagle: No
+. 2024-03-26 00:10:28.082 Proxy: None
+. 2024-03-26 00:10:28.082 Send buffer: 262144
+. 2024-03-26 00:10:28.082 UTF: Auto
+. 2024-03-26 00:10:28.082 FTPS: None [Client certificate: No]
+. 2024-03-26 00:10:28.082 FTP: Passive: Yes [Force IP: Auto]; MLSD: Auto [List all: Auto]; HOST: Auto
+. 2024-03-26 00:10:28.082 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2024-03-26 00:10:28.082 Cache directory changes: Yes, Permanent: Yes
+. 2024-03-26 00:10:28.082 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2024-03-26 00:10:28.082 Timezone offset: 0h 0m
+. 2024-03-26 00:10:28.082 --------------------------------------------------------------------------
+< 2024-03-26 00:10:28.093 Script: Connecting to 103.155.78.105 ...
+. 2024-03-26 00:10:28.094 Connecting to 103.155.78.105 ...
+. 2024-03-26 00:10:28.116 Connected with 103.155.78.105. Waiting for welcome message...
+< 2024-03-26 00:10:28.140 220 "Welcome FTP Server - VNTA"
+> 2024-03-26 00:10:28.140 USER cmc
+< 2024-03-26 00:10:28.162 331 Please specify the password.
+> 2024-03-26 00:10:28.162 PASS ********
+< 2024-03-26 00:10:28.292 230 Login successful.
+> 2024-03-26 00:10:28.292 SYST
+< 2024-03-26 00:10:28.314 215 UNIX Type: L8
+> 2024-03-26 00:10:28.314 FEAT
+< 2024-03-26 00:10:28.335 211-Features:
+< 2024-03-26 00:10:28.335  EPRT
+< 2024-03-26 00:10:28.335  EPSV
+< 2024-03-26 00:10:28.335  MDTM
+< 2024-03-26 00:10:28.335  PASV
+< 2024-03-26 00:10:28.335  REST STREAM
+< 2024-03-26 00:10:28.335  SIZE
+< 2024-03-26 00:10:28.335  TVFS
+< 2024-03-26 00:10:28.335  UTF8
+< 2024-03-26 00:10:28.335 211 End
+> 2024-03-26 00:10:28.335 OPTS UTF8 ON
+< 2024-03-26 00:10:28.361 200 Always in UTF8 mode.
+< 2024-03-26 00:10:28.361 Script: Connected
+. 2024-03-26 00:10:28.361 Connected
+. 2024-03-26 00:10:28.361 --------------------------------------------------------------------------
+. 2024-03-26 00:10:28.361 Using FTP protocol.
+. 2024-03-26 00:10:28.361 Doing startup conversation with host.
+< 2024-03-26 00:10:28.361 Script: Starting the session...
+> 2024-03-26 00:10:28.361 PWD
+< 2024-03-26 00:10:28.383 257 "/"
+. 2024-03-26 00:10:28.383 Getting current directory name.
+. 2024-03-26 00:10:28.383 Startup conversation with host finished.
+< 2024-03-26 00:10:28.383 Script: Session started.
+< 2024-03-26 00:10:28.383 Script: Active session: [1] cmc@103.155.78.105
+> 2024-03-26 00:10:28.383 Script: cd /PublicData
+. 2024-03-26 00:10:28.383 Changing directory to "/PublicData".
+> 2024-03-26 00:10:28.383 CWD /PublicData
+< 2024-03-26 00:10:28.406 250 Directory successfully changed.
+. 2024-03-26 00:10:28.406 Getting current directory name.
+> 2024-03-26 00:10:28.406 PWD
+< 2024-03-26 00:10:28.428 257 "/PublicData"
+< 2024-03-26 00:10:28.428 Script: /PublicData
+> 2024-03-26 00:10:28.428 Script: lcd C:\Users\Administrator
+< 2024-03-26 00:10:28.429 Script: C:\Users\Administrator
+> 2024-03-26 00:10:28.429 Script: get mobifone_spam_call_phone_20240325.csv
+. 2024-03-26 00:10:28.429 Listing file "mobifone_spam_call_phone_20240325.csv".
+. 2024-03-26 00:10:28.429 Retrieving file information...
+> 2024-03-26 00:10:28.429 PWD
+< 2024-03-26 00:10:28.450 257 "/PublicData"
+> 2024-03-26 00:10:28.450 CWD /PublicData/mobifone_spam_call_phone_20240325.csv
+< 2024-03-26 00:10:28.472 550 Failed to change directory.
+> 2024-03-26 00:10:28.472 TYPE I
+< 2024-03-26 00:10:28.494 200 Switching to Binary mode.
+> 2024-03-26 00:10:28.494 SIZE /PublicData/mobifone_spam_call_phone_20240325.csv
+< 2024-03-26 00:10:28.516 550 Could not get file size.
+. 2024-03-26 00:10:28.516 Could not retrieve file information
+< 2024-03-26 00:10:28.516 Script: Can't get attributes of file 'mobifone_spam_call_phone_20240325.csv'.
+< 2024-03-26 00:10:28.516 Could not retrieve file information
+< 2024-03-26 00:10:28.516 Could not get file size.
+. 2024-03-26 00:10:28.516 Script: Failed
+. 2024-03-26 00:10:28.516 Script: Exit code: 1
+. 2024-03-26 00:10:28.518 Disconnected from server
+. 2024-03-26 00:10:48.733 --------------------------------------------------------------------------
+. 2024-03-26 00:10:48.733 WinSCP Version 6.3.2 (Build 14890 2024-03-12) (OS 10.0.20348 – Windows Server 2022 Standard)
+. 2024-03-26 00:10:48.733 Configuration: nul
+. 2024-03-26 00:10:48.733 Log level: Normal
+. 2024-03-26 00:10:48.733 Local account: REMOTE-AA4\Administrator
+. 2024-03-26 00:10:48.733 Working directory: C:\Users\Administrator\Desktop\programsTriNVM\Scripts\FeeVos
+. 2024-03-26 00:10:48.733 Process ID: 7348
+. 2024-03-26 00:10:48.741 Ancestor processes: WinSCP, cmd, explorer, ...
+. 2024-03-26 00:10:48.742 Command-line: "C:\Users\Administrator\Desktop\programsTriNVM\WinSCP\WinSCP.exe" /console=6.3.2 /consoleinstance=_11188_34 "/log=C:\Users\Administrator\Desktop\programsTriNVM\Tool_Project\CMC_Project_Tool\BE_Cloudinary\Logs\CheatingFee\Telco\WinSCP.log" "/ini=nul" "/command" "open ftp://cmc:***@103.155.78.105/" "cd /PublicData" "lcd C:\Users\Administrator" "get mobifone_spam_call_phone_20240325.csv" "get viettel_spam_call_phone_20240325.csv" "get vinaphone_spam_call_phone_20240325.csv" "exit"
+. 2024-03-26 00:10:48.742 Time zone: Current: GMT+7 (SE Asia Standard Time), No DST
+. 2024-03-26 00:10:48.742 Login time: Tuesday, March 26, 2024 12:10:48 AM
+. 2024-03-26 00:10:48.742 --------------------------------------------------------------------------
+. 2024-03-26 00:10:48.742 Script: Retrospectively logging previous script records:
+> 2024-03-26 00:10:48.742 Script: open ftp://cmc:***@103.155.78.105/
+. 2024-03-26 00:10:48.742 --------------------------------------------------------------------------
+. 2024-03-26 00:10:48.742 Session name: cmc@103.155.78.105 (Ad-Hoc site)
+. 2024-03-26 00:10:48.742 Host name: 103.155.78.105 (Port: 21)
+. 2024-03-26 00:10:48.742 User name: cmc (Password: Yes, Key file: No, Passphrase: No)
+. 2024-03-26 00:10:48.742 Transfer Protocol: FTP
+. 2024-03-26 00:10:48.742 Ping type: Dummy, Ping interval: 30 sec; Timeout: 15 sec
+. 2024-03-26 00:10:48.742 Disable Nagle: No
+. 2024-03-26 00:10:48.742 Proxy: None
+. 2024-03-26 00:10:48.742 Send buffer: 262144
+. 2024-03-26 00:10:48.742 UTF: Auto
+. 2024-03-26 00:10:48.742 FTPS: None [Client certificate: No]
+. 2024-03-26 00:10:48.742 FTP: Passive: Yes [Force IP: Auto]; MLSD: Auto [List all: Auto]; HOST: Auto
+. 2024-03-26 00:10:48.742 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2024-03-26 00:10:48.742 Cache directory changes: Yes, Permanent: Yes
+. 2024-03-26 00:10:48.742 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2024-03-26 00:10:48.742 Timezone offset: 0h 0m
+. 2024-03-26 00:10:48.742 --------------------------------------------------------------------------
+< 2024-03-26 00:10:48.753 Script: Connecting to 103.155.78.105 ...
+. 2024-03-26 00:10:48.754 Connecting to 103.155.78.105 ...
+. 2024-03-26 00:10:48.775 Connected with 103.155.78.105. Waiting for welcome message...
+< 2024-03-26 00:10:48.801 220 "Welcome FTP Server - VNTA"
+> 2024-03-26 00:10:48.801 USER cmc
+< 2024-03-26 00:10:48.822 331 Please specify the password.
+> 2024-03-26 00:10:48.822 PASS ********
+< 2024-03-26 00:10:48.988 230 Login successful.
+> 2024-03-26 00:10:48.988 SYST
+< 2024-03-26 00:10:49.010 215 UNIX Type: L8
+> 2024-03-26 00:10:49.010 FEAT
+< 2024-03-26 00:10:49.031 211-Features:
+< 2024-03-26 00:10:49.031  EPRT
+< 2024-03-26 00:10:49.031  EPSV
+< 2024-03-26 00:10:49.031  MDTM
+< 2024-03-26 00:10:49.031  PASV
+< 2024-03-26 00:10:49.031  REST STREAM
+< 2024-03-26 00:10:49.031  SIZE
+< 2024-03-26 00:10:49.031  TVFS
+< 2024-03-26 00:10:49.031  UTF8
+< 2024-03-26 00:10:49.031 211 End
+> 2024-03-26 00:10:49.031 OPTS UTF8 ON
+< 2024-03-26 00:10:49.053 200 Always in UTF8 mode.
+< 2024-03-26 00:10:49.053 Script: Connected
+. 2024-03-26 00:10:49.053 Connected
+. 2024-03-26 00:10:49.053 --------------------------------------------------------------------------
+. 2024-03-26 00:10:49.053 Using FTP protocol.
+. 2024-03-26 00:10:49.053 Doing startup conversation with host.
+< 2024-03-26 00:10:49.053 Script: Starting the session...
+> 2024-03-26 00:10:49.053 PWD
+< 2024-03-26 00:10:49.074 257 "/"
+. 2024-03-26 00:10:49.074 Getting current directory name.
+. 2024-03-26 00:10:49.074 Startup conversation with host finished.
+< 2024-03-26 00:10:49.074 Script: Session started.
+< 2024-03-26 00:10:49.075 Script: Active session: [1] cmc@103.155.78.105
+> 2024-03-26 00:10:49.075 Script: cd /PublicData
+. 2024-03-26 00:10:49.075 Changing directory to "/PublicData".
+> 2024-03-26 00:10:49.075 CWD /PublicData
+< 2024-03-26 00:10:49.096 250 Directory successfully changed.
+. 2024-03-26 00:10:49.096 Getting current directory name.
+> 2024-03-26 00:10:49.097 PWD
+< 2024-03-26 00:10:49.118 257 "/PublicData"
+< 2024-03-26 00:10:49.118 Script: /PublicData
+> 2024-03-26 00:10:49.119 Script: lcd C:\Users\Administrator
+< 2024-03-26 00:10:49.119 Script: C:\Users\Administrator
+> 2024-03-26 00:10:49.119 Script: get mobifone_spam_call_phone_20240325.csv
+. 2024-03-26 00:10:49.119 Listing file "mobifone_spam_call_phone_20240325.csv".
+. 2024-03-26 00:10:49.119 Retrieving file information...
+> 2024-03-26 00:10:49.119 PWD
+< 2024-03-26 00:10:49.140 257 "/PublicData"
+> 2024-03-26 00:10:49.140 CWD /PublicData/mobifone_spam_call_phone_20240325.csv
+< 2024-03-26 00:10:49.161 550 Failed to change directory.
+> 2024-03-26 00:10:49.161 TYPE I
+< 2024-03-26 00:10:49.182 200 Switching to Binary mode.
+> 2024-03-26 00:10:49.182 SIZE /PublicData/mobifone_spam_call_phone_20240325.csv
+< 2024-03-26 00:10:49.204 550 Could not get file size.
+. 2024-03-26 00:10:49.204 Could not retrieve file information
+< 2024-03-26 00:10:49.204 Script: Can't get attributes of file 'mobifone_spam_call_phone_20240325.csv'.
+< 2024-03-26 00:10:49.204 Could not retrieve file information
+< 2024-03-26 00:10:49.204 Could not get file size.
+. 2024-03-26 00:10:49.204 Script: Failed
+. 2024-03-26 00:10:49.204 Script: Exit code: 1
+. 2024-03-26 00:10:49.206 Disconnected from server
+. 2024-03-26 00:10:56.698 --------------------------------------------------------------------------
+. 2024-03-26 00:10:56.698 WinSCP Version 6.3.2 (Build 14890 2024-03-12) (OS 10.0.20348 – Windows Server 2022 Standard)
+. 2024-03-26 00:10:56.698 Configuration: nul
+. 2024-03-26 00:10:56.698 Log level: Normal
+. 2024-03-26 00:10:56.698 Local account: REMOTE-AA4\Administrator
+. 2024-03-26 00:10:56.698 Working directory: C:\Users\Administrator\Desktop\programsTriNVM\Scripts\FeeVos
+. 2024-03-26 00:10:56.698 Process ID: 1124
+. 2024-03-26 00:10:56.706 Ancestor processes: WinSCP, cmd, explorer, ...
+. 2024-03-26 00:10:56.707 Command-line: "C:\Users\Administrator\Desktop\programsTriNVM\WinSCP\WinSCP.exe" /console=6.3.2 /consoleinstance=_11244_454 "/log=C:\Users\Administrator\Desktop\programsTriNVM\Tool_Project\CMC_Project_Tool\BE_Cloudinary\Logs\CheatingFee\Telco\WinSCP.log" "/ini=nul" "/command" "open ftp://cmc:***@103.155.78.105/" "cd /PublicData" "lcd C:\Users\Administrator" "get mobifone_spam_call_phone_20240325.csv" "get viettel_spam_call_phone_20240325.csv" "get vinaphone_spam_call_phone_20240325.csv" "exit"
+. 2024-03-26 00:10:56.707 Time zone: Current: GMT+7 (SE Asia Standard Time), No DST
+. 2024-03-26 00:10:56.707 Login time: Tuesday, March 26, 2024 12:10:56 AM
+. 2024-03-26 00:10:56.707 --------------------------------------------------------------------------
+. 2024-03-26 00:10:56.707 Script: Retrospectively logging previous script records:
+> 2024-03-26 00:10:56.707 Script: open ftp://cmc:***@103.155.78.105/
+. 2024-03-26 00:10:56.707 --------------------------------------------------------------------------
+. 2024-03-26 00:10:56.707 Session name: cmc@103.155.78.105 (Ad-Hoc site)
+. 2024-03-26 00:10:56.707 Host name: 103.155.78.105 (Port: 21)
+. 2024-03-26 00:10:56.707 User name: cmc (Password: Yes, Key file: No, Passphrase: No)
+. 2024-03-26 00:10:56.707 Transfer Protocol: FTP
+. 2024-03-26 00:10:56.707 Ping type: Dummy, Ping interval: 30 sec; Timeout: 15 sec
+. 2024-03-26 00:10:56.707 Disable Nagle: No
+. 2024-03-26 00:10:56.707 Proxy: None
+. 2024-03-26 00:10:56.707 Send buffer: 262144
+. 2024-03-26 00:10:56.707 UTF: Auto
+. 2024-03-26 00:10:56.707 FTPS: None [Client certificate: No]
+. 2024-03-26 00:10:56.707 FTP: Passive: Yes [Force IP: Auto]; MLSD: Auto [List all: Auto]; HOST: Auto
+. 2024-03-26 00:10:56.707 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2024-03-26 00:10:56.707 Cache directory changes: Yes, Permanent: Yes
+. 2024-03-26 00:10:56.707 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2024-03-26 00:10:56.707 Timezone offset: 0h 0m
+. 2024-03-26 00:10:56.707 --------------------------------------------------------------------------
+< 2024-03-26 00:10:56.719 Script: Connecting to 103.155.78.105 ...
+. 2024-03-26 00:10:56.719 Connecting to 103.155.78.105 ...
+. 2024-03-26 00:10:56.741 Connected with 103.155.78.105. Waiting for welcome message...
+< 2024-03-26 00:10:56.766 220 "Welcome FTP Server - VNTA"
+> 2024-03-26 00:10:56.766 USER cmc
+< 2024-03-26 00:10:56.788 331 Please specify the password.
+> 2024-03-26 00:10:56.788 PASS ********
+< 2024-03-26 00:10:56.929 230 Login successful.
+> 2024-03-26 00:10:56.929 SYST
+< 2024-03-26 00:10:56.951 215 UNIX Type: L8
+> 2024-03-26 00:10:56.951 FEAT
+< 2024-03-26 00:10:56.973 211-Features:
+< 2024-03-26 00:10:56.973  EPRT
+< 2024-03-26 00:10:56.973  EPSV
+< 2024-03-26 00:10:56.973  MDTM
+< 2024-03-26 00:10:56.973  PASV
+< 2024-03-26 00:10:56.973  REST STREAM
+< 2024-03-26 00:10:56.973  SIZE
+< 2024-03-26 00:10:56.973  TVFS
+< 2024-03-26 00:10:56.973  UTF8
+< 2024-03-26 00:10:56.973 211 End
+> 2024-03-26 00:10:56.973 OPTS UTF8 ON
+< 2024-03-26 00:10:56.994 200 Always in UTF8 mode.
+< 2024-03-26 00:10:56.994 Script: Connected
+. 2024-03-26 00:10:56.994 Connected
+. 2024-03-26 00:10:56.994 --------------------------------------------------------------------------
+. 2024-03-26 00:10:56.994 Using FTP protocol.
+. 2024-03-26 00:10:56.994 Doing startup conversation with host.
+< 2024-03-26 00:10:56.994 Script: Starting the session...
+> 2024-03-26 00:10:56.994 PWD
+< 2024-03-26 00:10:57.016 257 "/"
+. 2024-03-26 00:10:57.016 Getting current directory name.
+. 2024-03-26 00:10:57.016 Startup conversation with host finished.
+< 2024-03-26 00:10:57.016 Script: Session started.
+< 2024-03-26 00:10:57.016 Script: Active session: [1] cmc@103.155.78.105
+> 2024-03-26 00:10:57.016 Script: cd /PublicData
+. 2024-03-26 00:10:57.016 Changing directory to "/PublicData".
+> 2024-03-26 00:10:57.016 CWD /PublicData
+< 2024-03-26 00:10:57.038 250 Directory successfully changed.
+. 2024-03-26 00:10:57.038 Getting current directory name.
+> 2024-03-26 00:10:57.038 PWD
+< 2024-03-26 00:10:57.060 257 "/PublicData"
+< 2024-03-26 00:10:57.060 Script: /PublicData
+> 2024-03-26 00:10:57.060 Script: lcd C:\Users\Administrator
+< 2024-03-26 00:10:57.060 Script: C:\Users\Administrator
+> 2024-03-26 00:10:57.060 Script: get mobifone_spam_call_phone_20240325.csv
+. 2024-03-26 00:10:57.060 Listing file "mobifone_spam_call_phone_20240325.csv".
+. 2024-03-26 00:10:57.060 Retrieving file information...
+> 2024-03-26 00:10:57.060 PWD
+< 2024-03-26 00:10:57.082 257 "/PublicData"
+> 2024-03-26 00:10:57.082 CWD /PublicData/mobifone_spam_call_phone_20240325.csv
+< 2024-03-26 00:10:57.104 550 Failed to change directory.
+> 2024-03-26 00:10:57.104 TYPE I
+< 2024-03-26 00:10:57.126 200 Switching to Binary mode.
+> 2024-03-26 00:10:57.126 SIZE /PublicData/mobifone_spam_call_phone_20240325.csv
+< 2024-03-26 00:10:57.147 550 Could not get file size.
+. 2024-03-26 00:10:57.147 Could not retrieve file information
+< 2024-03-26 00:10:57.147 Script: Can't get attributes of file 'mobifone_spam_call_phone_20240325.csv'.
+< 2024-03-26 00:10:57.147 Could not retrieve file information
+< 2024-03-26 00:10:57.147 Could not get file size.
+. 2024-03-26 00:10:57.147 Script: Failed
+. 2024-03-26 00:10:57.147 Script: Exit code: 1
+. 2024-03-26 00:10:57.149 Disconnected from server
