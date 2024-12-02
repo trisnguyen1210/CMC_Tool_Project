@@ -8,22 +8,28 @@ import {
 } from "@mui/material";
 
 const SidebarItem = ({ data, changeStatusSideBar }) => {
+    console.log(data);
+
     const [open, setOpen] = useState(false);
     const navigate = useNavigate();
 
     const handleToggle = () => {
-        setOpen(!open);
-        if (data.path) {
-            navigate(data.path);
+        if (data.children) {
+            setOpen(!open);
+        } else if (data.onClick) {
+            data.onClick();
+        } else if (data.url) {
+            navigate(data.url);
+            changeStatusSideBar(false);
         }
     };
 
-    const handleChildClick = (child) => {
-        if (child.url) {
+    const handleChildClick = child => {
+        if (child.onClick) {
+            child.onClick();
+        } else if (child.url) {
             navigate(child.url);
-        }
-        if (changeStatusSideBar) {
-            changeStatusSideBar(child.id);
+            changeStatusSideBar(false);
         }
     };
 

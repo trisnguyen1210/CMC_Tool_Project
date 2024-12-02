@@ -13,19 +13,26 @@ import { useState } from "react";
 import { Box, Button, Divider, Drawer } from "@mui/material";
 import SidebarItem from "../Components/SidebarItem";
 import '../styles/Sidebar.css'
+import { useNavigate } from "react-router-dom";
 // import SidebarItem from '../Components/SidebarItem';
 
 export default function SideBar() {
     const [showSideBar, setShowSideBar] = useState(false);
-
+    const navigate = useNavigate();
     const changeStatusSideBar = () => setShowSideBar(!showSideBar);
+    
+    const handleNavigate = (url) => {    
+        navigate(url);
+        changeStatusSideBar();
+    }
 
     const sidebarList = [
         {
             title: "Trang chủ",
             icon: <Home />,
             url: "/",
-            isMainMenu: true
+            isMainMenu: true,
+            onClick: () => handleNavigate("/")
         },
         {
             title: "Công cụ",
@@ -37,13 +44,15 @@ export default function SideBar() {
                     title: "Danh sách công cụ",
                     icon: <BookText />,
                     url: "/tool/list",
-                    description: "Xem tất cả công cụ hệ thống"
+                    description: "Xem tất cả công cụ hệ thống",
+                    onClick: () => handleNavigate("/tool/list")
                 },
                 {
                     title: "Tìm kiếm",
                     icon: <SearchCode />,
                     url: "/tool/search",
-                    description: "Tìm kiếm công cụ"
+                    description: "Tìm kiếm công cụ",
+                    onClick: () => handleNavigate("/tool/search")
                 },
             ],
         },
@@ -58,21 +67,24 @@ export default function SideBar() {
                     icon: <Percent />,
                     url: "/monitor/feeVOS",
                     group: "VOS",
-                    description: "Theo dõi cước phí VOS"
+                    description: "Theo dõi cước phí VOS",
+                    onClick: () => handleNavigate("/monitor/feeVOS")
                 },
                 {
                     title: "Call Current VOS",
                     icon: <Drama />,
                     url: "/monitor/currentCallVos",
                     group: "VOS",
-                    description: "Theo dõi cuộc gọi hiện tại"
+                    description: "Theo dõi cuộc gọi hiện tại",
+                    onClick: () => handleNavigate("/monitor/currentCallVos")
                 },
                 {
                     title: "DS reset cước",
                     icon: <HandCoins />,
                     url: "/monitor/listResetFeeVos",
                     group: "VOS",
-                    description: "Danh sách reset cước"
+                    description: "Danh sách reset cước",
+                    onClick: () => handleNavigate("/monitor/listResetFeeVos")
                 },
             ],
         },
