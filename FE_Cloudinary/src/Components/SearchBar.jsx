@@ -1,22 +1,22 @@
 import { Input } from "antd";
-import { useDispatch, useSelector } from "react-redux";
 import { SearchOutlined } from "@ant-design/icons";
 
 export default function SearchBar({
     placeholder,
-    className,
+    classNameSearchBar,
+    classNameInput,
     allowClear,
     value,
     onChange
 }) {
     return (
-        <div>
+        <div className={classNameSearchBar}>
             <Input
                 placeholder={placeholder}
                 prefix={<SearchOutlined />}
                 onChange={onChange}
                 value={value}
-                className={className}
+                className={classNameInput}
                 allowClear={allowClear}
             />
         </div>

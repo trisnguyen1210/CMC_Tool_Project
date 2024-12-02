@@ -1,8 +1,14 @@
 .search-input {
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
+    margin: 20px 0;
 }
 
 @media (max-width: 768px) {
+    .search-container {
+        padding: 10px;
+    }
+
     .search-input {
         width: 100%;
     }

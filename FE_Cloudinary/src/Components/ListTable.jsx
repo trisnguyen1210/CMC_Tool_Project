@@ -2,7 +2,7 @@ import { Table } from "antd";
 
 export default function ListTable({ columns, listTool, className }) {
     if (!listTool || listTool.length === 0) {
-        return <div>No tools available</div>; // Update message for clarity
+        return <div>No list available</div>; // Update message for clarity
     }
 
     return (

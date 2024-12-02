@@ -6,6 +6,7 @@ import SearchBar from "../../Components/SearchBar";
 import ListTable from "../../Components/ListTable";
 import { Typography, Tag, Button } from "antd";
 import { setSearchText } from "../../redux/slices/tool.slice";
+import "../../styles/Logged.css";
 const { Title } = Typography;
 
 export default function ToolListPage() {
@@ -86,7 +87,7 @@ export default function ToolListPage() {
         <div className="tool-list-container">
             <div className="tool-list-header">
                 <Title level={2}>Tool List</Title>
-                <SearchBar placeholder="Search tool..." className="search-bar" allowClear searchText={searchText} onChange={handleSearch} />
+                <SearchBar placeholder="Search tool..." classNameSearchBar="" classNameInput="search-input" allowClear searchText={searchText} onChange={handleSearch} />
             </div>
             <div>
                 <ListTable listTool={listTool} searchText={searchText} className="tool-list-table" columns={columns} />
