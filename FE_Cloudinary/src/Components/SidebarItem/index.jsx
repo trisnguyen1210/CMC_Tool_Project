@@ -1,65 +1,68 @@
-import { Collapse, List, ListItemButton, ListItemIcon, ListItemText } from "@mui/material";
-import { ChevronDown, ChevronLeft } from "lucide-react";
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useState } from "react";
+import {
+    List,
+    ListItemButton,
+    ListItemIcon,
+    ListItemText
+} from "@mui/material";
 
-export default function SidebarItem(props) {
-    const { changeStatusSideBar } = props;
-    const { title, icon, children, url } = props.data;
-    const navigate = useNavigate();
+const SidebarItem = ({ data, changeStatusSideBar }) => {
+    const [open, setOpen] = useState(false);
 
-    const [showCollapse, setShowCollapse] = useState(false);
-    const changeStatusCollapse = () => setShowCollapse(!showCollapse);
-
-    const handleNavigate = (e) => {
-        changeStatusSideBar();
-        navigate(e);
+    const handleToggle = () => {
+        setOpen(!open);
     };
 
     return (
-        <>
-            <>
-                {children ? (
-                    <>
-                        <List>
-                            <ListItemButton onClick={changeStatusCollapse}>
-                                <ListItemIcon>{icon}</ListItemIcon>
-                                <ListItemText primary={title} />
-                                {showCollapse ? (
-                                    <>
-                                        <ChevronDown />
-                                    </>
-                                ) : (
-                                    <>
-                                        <ChevronLeft />
-                                    </>
-                                )}
-                            </ListItemButton>
-                            <Collapse in={showCollapse} timeout="auto" unmountOnExit>
-                                <List component="div" disablePadding>
-                                    {children.map((item, index) => (
-                                        <ListItemButton
-                                            sx={{ pl: 4 }}
-                                            key={index}
-                                            onClick={() => handleNavigate(item.url)}
-                                        >
-                                            <ListItemIcon>{item.icon}</ListItemIcon>
-                                            <ListItemText primary={item.title} />
-                                        </ListItemButton>
-                                    ))}
-                                </List>
-                            </Collapse>
-                        </List>
-                    </>
-                ) : (
-                    <>
-                        <ListItemButton onClick={() => handleNavigate(url)}>
-                            <ListItemIcon>{icon}</ListItemIcon>
-                            <ListItemText primary={title} />
+        <div>
+            <ListItemButton
+                sx={{
+                    padding: "8px 16px",
+                    margin: "4px 8px",
+                    borderRadius: "8px",
+                    "&:hover": {
+                        backgroundColor: "#ADC2A9",
+                        transform: "translateX(4px)",
+                        transition: "all 0.3s ease",
+                        boxShadow: "0 2px 4px rgba(0,0,0,0.1)"
+                    }
+                }}
+                onClick={handleToggle}
+            >
+                <ListItemIcon>
+                    {data.icon}
+                </ListItemIcon>
+                <ListItemText primary={data.title} />
+            </ListItemButton>
+
+            {open &&
+                data.children &&
+                <List>
+                    {data.children.map((child, index) =>
+                        <ListItemButton
+                            key={index}
+                            sx={{
+                                pl: 4,
+                                margin: "4px 16px",
+                                borderRadius: "8px",
+                                "&:hover": {
+                                    backgroundColor: "#ADC2A9",
+                                    transform: "translateX(4px)",
+                                    transition: "all 0.3s ease",
+                                    boxShadow: "0 2px 4px rgba(0,0,0,0.1)"
+                                }
+                            }}
+                            onClick={() => changeStatusSideBar(child.id)}
+                        >
+                            <ListItemIcon>
+                                {child.icon}
+                            </ListItemIcon>
+                            <ListItemText primary={child.title} />
                         </ListItemButton>
-                    </>
-                )}
-            </>
-        </>
+                    )}
+                </List>}
+        </div>
     );
-}
+};
+
+export default SidebarItem;
