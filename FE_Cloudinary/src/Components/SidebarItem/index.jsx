@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import {
     List,
     ListItemButton,
@@ -8,9 +9,22 @@ import {
 
 const SidebarItem = ({ data, changeStatusSideBar }) => {
     const [open, setOpen] = useState(false);
+    const navigate = useNavigate();
 
     const handleToggle = () => {
         setOpen(!open);
+        if (data.path) {
+            navigate(data.path);
+        }
+    };
+
+    const handleChildClick = (child) => {
+        if (child.path) {
+            navigate(child.path);
+        }
+        if (changeStatusSideBar) {
+            changeStatusSideBar(child.id);
+        }
     };
 
     return (
@@ -52,7 +66,7 @@ const SidebarItem = ({ data, changeStatusSideBar }) => {
                                     boxShadow: "0 2px 4px rgba(0,0,0,0.1)"
                                 }
                             }}
-                            onClick={() => changeStatusSideBar(child.id)}
+                            onClick={() => handleChildClick(child)}
                         >
                             <ListItemIcon>
                                 {child.icon}
