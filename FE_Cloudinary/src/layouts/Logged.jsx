@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 import SideBar from "./Sidebar";
-import "./style.css";
+import "../styles/Layout.css";
 
 export default function Logged() {
     return (

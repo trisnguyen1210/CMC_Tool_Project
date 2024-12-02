@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import userReducer from "../slices/userSlice";
+import userReducer from "../redux/slices/user.slice";
 import feeVosReducer from "../slices/feeVosSlice";
 import toolReducer from "../slices/toolSlice";
 import stepReducer from "../slices/stepSlice";

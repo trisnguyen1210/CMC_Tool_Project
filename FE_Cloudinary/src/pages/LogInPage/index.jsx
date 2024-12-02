@@ -3,7 +3,7 @@ import { Button, Card, Form, Input, message } from "antd";
 import { useDispatch } from "react-redux";
 import { UserOutlined, LockOutlined } from "@ant-design/icons";
 import logo_trinvm from "../../assets/logo_trinvm.png";
-import { loginUser } from "../../redux/slices/user.slice";
+import { loginUser } from "../../redux/thunks/user.thunk";
 
 export default function LogInPage() {
     const dispatch = useDispatch();

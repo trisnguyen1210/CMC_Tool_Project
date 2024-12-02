@@ -1,0 +1,9 @@
+.content_background {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10vh;
+    place-content: center;
+}

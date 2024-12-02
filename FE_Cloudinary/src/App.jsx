@@ -5,13 +5,13 @@ import HomePage from "./pages/HomePage";
 import Logged from "./layouts/Logged";
 import LogInPage from "./pages/LogInPage";
 import { useDispatch, useSelector } from "react-redux";
-import { getUser } from "./slices/userSlice";
 import ToolListPage from "./pages/ToolListPage";
 import MonitorFeeVosPage from "./pages/MonitorPage/MonitorFeeVosPage";
 import ToolRunPage from "./pages/ToolRunPage";
 import MonitorCurrentCallVosPage from "./pages/MonitorPage/MonitorCallCurrentVosPage";
 import MonitorDNCPage from "./pages/MonitorPage/MonitorDNCVosPage";
 import MonitorListResetFeeVosPage from "./pages/MonitorPage/MonitorListResetFeeVosPage";
+import { getUser } from "./redux/thunks/user.thunk";
 
 function App() {
     const dispatch = useDispatch();

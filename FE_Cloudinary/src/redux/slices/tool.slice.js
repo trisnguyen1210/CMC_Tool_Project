@@ -1,13 +1,9 @@
-import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import { getToolsList } from "../services/axios";
-
-export const getListTools = createAsyncThunk("/api/tools/getList", async () => {
-    const response = await getToolsList();
-    return response;
-});
+import { createSlice } from "@reduxjs/toolkit";
+import { getListTools } from "../../slices/toolSlice";
 
 const initialState = {
     listTool: [],
+    searchText: "",
     pickTerm: "",
     isLoading: false,
     isError: false
@@ -16,7 +12,11 @@ const initialState = {
 export const toolSlicer = createSlice({
     name: "tool",
     initialState,
-    reducers: {},
+    reducers: {
+        setSearchText: (state, action) => {
+            state.searchText = action.payload;
+        }
+    },
     extraReducers: builder => {
         builder
             .addCase(getListTools.pending, (state, action) => {
@@ -35,7 +35,6 @@ export const toolSlicer = createSlice({
     }
 });
 
-// Action creators are generated for each case reducer function
-export const { setListTools } = toolSlicer.actions;
+export const { setSearchText } = toolSlicer.actions;
 
 export default toolSlicer.reducer;
