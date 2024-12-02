@@ -19,8 +19,8 @@ const SidebarItem = ({ data, changeStatusSideBar }) => {
     };
 
     const handleChildClick = (child) => {
-        if (child.path) {
-            navigate(child.path);
+        if (child.url) {
+            navigate(child.url);
         }
         if (changeStatusSideBar) {
             changeStatusSideBar(child.id);

@@ -1,5 +1,5 @@
 html {
-    background-image: url("../../src/assets/bg_login.jpg");
+    background-image: url("/src/assets/bg_login.jpg");
     font-family: "Raleway", sans-serif;
     background-size: 100% 100%;
     background-position: center;
