@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { backStep, nextStep } from "../../../slices/stepSlice";
-import "./style.css";
+import "../../../styles/Tool.css";
 import { Button } from "antd";
 import { useNavigate } from "react-router-dom";
 

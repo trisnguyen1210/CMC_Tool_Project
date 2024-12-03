@@ -11,7 +11,7 @@ import { useEffect } from "react";
 import { ipData } from "../hardData";
 import { setDisableStep } from "../../../../slices/stepSlice";
 import _ from 'lodash';
-import './style.css';
+import '../../../../styles/Tool.css';
 import Highlighter from "react-highlight-words";
 
 const { Text } = Typography;
@@ -97,7 +97,7 @@ export default function ToolContentCheckPNGateway() {
             return (
                 <div>
                     {resultSearch.map((element, index) => {
-                         const prefixesArray = element.prefixes ? element.prefixes.split(',') : [];
+                        const prefixesArray = element.prefixes ? element.prefixes.split(',') : [];
                         const findKeyArray = element.findKey ? element.findKey.split(',') : [];
                         const commonKeys = _.intersection(prefixesArray, findKeyArray);
                         const uniquePrefixes = _.difference(prefixesArray, findKeyArray).join(',');

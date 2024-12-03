@@ -1,34 +1,43 @@
+import { useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
+import { LoadingState } from "../../Components/LoadingState";
+import { ErrorState } from "../../Components/ErrorState";
+import ToolRunContent from "../../Components/Tools/ToolRunContent";
 import { useSelector } from "react-redux";
 import { listComponentToolContent } from "../../Components/Tools/ToolRunContent/hardData";
-import ToolRunContent from "../../Components/Tools/ToolRunContent";
-import { useEffect } from "react";
-export default function ToolRunPage() {
-    const { slug } = useParams();
+
+const ToolRunPage = () => {
     const navigate = useNavigate();
-    const listTool = useSelector((state) => state.tool.listTool);
-    const isLoading = useSelector((state) => state.tool.isLoading);
-    const isError = useSelector((state) => state.tool.isError);
+    const { slug } = useParams();
+    const { listTool, isLoading, isError } = useSelector((state) => state.tool);
+    const tool = listTool.find((e) => e.slug === slug);
+    const toolContent = listComponentToolContent.find((e) => e.slug === slug);
 
-    const tool = listTool.filter((e) => e.slug === slug)[0];
-    const ToolContent = listComponentToolContent.filter((e) => e.slug === slug)[0];
-
-    if (listTool.length === 0) {
-        useEffect(() => {
+    useEffect(() => {
+        if (listTool.length === 0) {
             navigate("/tool/list");
-        }, []);
-        return <></>;
+        }
+    }, [listTool.length, navigate]);
+
+    if (isLoading) {
+        return <LoadingState />;
     }
-    
-    if (isLoading === false && isError === false) {
-        return (
-            <>
-                <div style={{ textAlign: "center", width: "100%" }}>
-                    <h2>Thông tin công cụ: {`${ToolContent.slug}`}</h2>
-                    <h3>Chức năng: {`${tool.description}`}</h3>
-                    <ToolRunContent />
-                </div>
-            </>
-        );
+
+    if (isError) {
+        return <ErrorState />;
     }
-}
+
+    if (!tool || !toolContent) {
+        return <ErrorState message="Tool not found" />;
+    }
+
+    return (
+        <div className="tool-run-page">
+            <div className="tool-run-page-title">Thông tin công cụ: {toolContent.slug}</div>
+            <div className="tool-run-page-description">Chức năng: {tool.description}</div>
+            <ToolRunContent />
+        </div>
+    );
+};
+
+export default ToolRunPage;

@@ -2,7 +2,7 @@ import { Card, Col, Row, Statistic } from "antd";
 import { ShieldAlert, Trash2, UserCheck, Smile, Annoyed, Frown } from "lucide-react";
 import { useSelector } from "react-redux";
 import NotificationTool from './NotificationTool.jsx';
-import './style.css';
+import '../../../../styles/Tool.css';
 
 export default function StatisticTool() {
     const effectList = useSelector((state) => state.toolCPNGateway.effectList) || 0;

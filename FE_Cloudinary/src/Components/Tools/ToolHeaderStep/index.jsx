@@ -1,6 +1,6 @@
 import { Steps } from "antd";
 import { useSelector } from "react-redux";
-import "./style.css";
+import "../../../styles/Tool.css";
 import { useParams } from "react-router-dom";
 import { listStepTool } from "../ToolRunContent/hardData";
 

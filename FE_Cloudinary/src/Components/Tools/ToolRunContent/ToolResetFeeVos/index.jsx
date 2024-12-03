@@ -6,7 +6,7 @@ import {
     setPickAccount,
     setPickServer,
 } from "../../../../slices/accountVosSlice";
-import "./style.css";
+import "../../../../styles/Tool.css";
 import ToolProcess from "../../ToolProcess";
 import { Typography } from "antd";
 import { ipData } from "../hardData.jsx";

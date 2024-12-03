@@ -1,6 +1,6 @@
 import { Card } from "antd";
 import { useSelector } from "react-redux";
-import './style.css';
+import '../../../../styles/Tool.css';
 import TableDataSummaryFlowGW from "./TableDataSummaryFlowGW";
 import { useEffect, useState } from "react";
 

@@ -1,0 +1,113 @@
+.tool_header_step {
+    padding: 30px 0px;
+    width: 80%;
+}
+
+.tool_change_step {
+    padding: 50px 50px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 100;
+}
+
+.background_content_tool {
+    width: 80vw;
+    padding: 60px 0px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom_descriptions {
+    padding: 30px;
+}
+
+.custome_item_description {
+    flex: 1;
+    max-width: 50px;
+}
+
+.step_input_value>div {
+    margin-bottom: 10px;
+}
+
+.custom_description_resetFeeVos .ant-descriptions-row .ant-descriptions-item-label {
+    font-family: Freeman !important;
+    font-size: 16px;
+    background-color: #e0aed0 !important;
+}
+
+.custom_description_resetFeeVos .ant-descriptions-row .ant-descriptions-item-content {
+    background-color: #ffe5e5 !important;
+}
+
+.statistic_tool {
+    padding: 10px;
+}
+
+.statistic_tool .info_icon_style {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #5ab2ff !important;
+    font-size: 20 !important;
+}
+
+.ant-notification-notice-message {
+    font-size: 18px !important;
+}
+
+.custom_descriptions_checkPhoneNumb {
+    padding-bottom: 10px;
+}
+
+div.ant-card-head>div>div.ant-card-head-title {
+    color: whitesmoke;
+}
+
+.tool_card_MFGateway_header {
+    text-align: "center";
+    background-color: #d37676;
+}
+
+.tool_card_MFGateway_title {
+    font-size: 20px;
+    font-weight: 500;
+    color: whitesmoke;
+}
+
+.tool_card_MFGateway_content {
+    font-size: 30px;
+    font-weight: 800;
+    color: whitesmoke;
+    overflow-wrap: break-word;
+}
+
+.tool_card_MFGateway_item {
+    text-align: "center";
+    background-color: "#f0f2f5";
+    width: "33%";
+}
+
+.tool-run-page {
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.tool-run-page-title {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.tool-run-page-description {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 24px;
+}

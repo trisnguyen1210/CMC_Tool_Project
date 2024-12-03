@@ -1,4 +1,4 @@
-import './style.css';
+import '../../../../styles/Tool.css';
 import { notification } from 'antd';
 import { CircleAlert } from 'lucide-react';
 
